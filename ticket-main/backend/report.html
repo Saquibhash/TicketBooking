@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Entertainment Report</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Monthly Entertainment Report - {{ month }} {{ year }}</h1>
+    <h2>Bookings:</h2>
+    <table>
+        <tr>
+            <th>User</th>
+            <th>Show</th>
+            <th>Movie</th> <!-- New column -->
+            <th>Date/Time</th>
+            <th>Seats</th>
+        </tr>
+        {% for booking in bookings %}
+        <tr>
+            <td>{{ booking.user.name }}</td>
+            <td>{{ booking.shw.venue.name }} - {{ booking.shw.day }} {{ booking.shw.time }}</td>
+            <td>{{ booking.shw.movie.title }}</td> <!-- New column -->
+            <td>{{ booking.date_time }}</td>
+            <td>{{ booking.num_seats }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p>Thankyou for using BOOKMYSHOW</p>
+    <p>Regards, <br>TICKET-SHOW-V2 team</p>
+
+</body>
+</html>

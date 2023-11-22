@@ -1,0 +1,55 @@
+INSERT INTO movie (id, title, director, duration, cast, img) VALUES 
+(1, "Jailer", "Christopher Nolan", 169, "Rajnikanth, Ramya Krishnan, MohanLal", "https://i.ibb.co/1ZWmrxV/0-Tp-MAWwg-jailer-1200x1875.jpg"), 
+(2, "Oppenheimer", "Ajay Devgan", 190, "Cillian Murphy, Robert Downey Jr., Emily Blunt, Matt Damon", "https://i.ibb.co/JR711Pv/open.jpg"), 
+(3, "Barbie", "Greta Gerwig",116 , "Margot Robbie, Ryan Gosling,Emma Mackey", "https://i.ibb.co/Zh8Pd7P/barbie.jpg"), 
+(4, "Mission Impossible: Dead Reckoning - Part One", "Christopher McQuarrie", 165, "Tom Cruise, Hayley Atwell, Simon peg", "https://i.ibb.co/GcKstR0/mib.jpg"), 
+(5, "Gadar 2: The Katha Continues", "Anil Sharma", 170, "Sunny Deol, Ameesha Patel", "https://i.ibb.co/wBrLBXW/gadar-2.jpg"), 
+(6, "OMG 2", "Amit Rai", 156, "Akshay Kumar, Pankaj Tripathi, Yami Gautam", "https://i.ibb.co/126mxdF/omg2.jpg"), 
+
+INSERT INTO venue (id, name, location, num_total_seats) VALUES
+(1, "Screen 1","Delhi", 50),
+(2, "Screen 2","Delhi", 45),
+(3, "Screen 3","Delhi", 30),
+(4, "Screen 4","Delhi", 30),
+(5, "Screen 5","Delhi", 25),
+(6, "Screen 6","Delhi", 25),
+(7, "Screen 7","Delhi", 20),
+(8, "Screen 8","Delhi", 18);
+
+insert into shw VALUES
+(11, '2023-08-08', '20:00:00',1, 1),
+(22, '2023-08-08', '23:30:00',2, 5),
+(33, '2023-08-08', '16:00:00',3, 6),
+(44, '2023-08-08', '15:30:00',4, 2),
+(55, '2023-08-09', '16:45:00',5, 3),
+(66, '2023-08-09', '19:50:00',6, 4),
+(77, '2023-08-09', '20:45:00',7, 8),
+(88, '2023-08-10', '22:00:00',7, 7),
+(99, '2023-08-10', '23:30:00',8, 1),
+(111, '2023-08-10', '19:45:00',1, 2),
+(222, '2023-08-11', '18:50:00',2, 3),
+(333, '2023-08-11', '21:45:00',3, 4),
+(444, '2023-08-12', '21:45:00',4, 5),
+(555, '2023-08-12', '13:50:00',5, 6),
+(666, '2023-08-13', '22:45:00',6, 6),
+(777, '2023-08-13', '18:45:00',7, 7),
+(888, '2023-08-13', '13:00:00',8, 8);
+
+INSERT INTO booking (id, user_id, shw_id, num_seats, date_time) VALUES
+(1, 1, 11, 2, '2023-08-08 20:00:00'),
+(2, 1, 22, 4, '2023-08-08 23:30:00'),
+(3, 1, 33, 3, '2023-08-08 16:00:00'),
+(4, 1, 44, 1, '2023-08-08 15:30:00'),
+(5, 1, 55, 2, '2023-08-09 16:45:00'),
+(6, 1, 66, 3, '2023-08-09 19:50:00'),
+(7, 1, 77, 1, '2023-08-09 20:45:00'),
+(8, 1, 88, 4, '2023-08-10 22:00:00'),
+(9, 1, 99, 2, '2023-08-10 23:30:00'),
+(10, 1, 111, 3, '2023-08-10 19:45:00'),
+(11, 1, 222, 1, '2023-08-11 18:50:00'),
+(12, 1, 333, 2, '2023-08-11 21:45:00'),
+(13, 1, 444, 1, '2023-08-12 21:45:00'),
+(14, 1, 555, 2, '2023-08-12 13:50:00'),
+(15, 1, 666, 4, '2023-08-13 22:45:00'),
+(16, 1, 777, 3, '2023-08-13 18:45:00'),
+(17, 1, 888, 2, '2023-08-13 13:00:00');
