@@ -1,7 +1,7 @@
-# TicketBooking
+# Ticket Booking (ticket show) app using flask and vuejs
 This is a ticket booking app similar to book my show i made using flask and vuejs for front end, sqlite for db and also has a monthly and daily scheduled task setup through celery and redis server.
  this was for my app dev-2 project.
-I have attached the problem statement as well along with the files.
+I have attached the problem statement as well along with the files. kindly check that for other specific requiremnets followed.
 
 all copyrights remains to me
 Kindly use for reference.
